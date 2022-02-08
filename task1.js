@@ -75,3 +75,19 @@ array = ["123", "343", "545", "325", "12621"];
     }
     console.log(palindromes)
 })(array);
+
+F, Return median of two sorted arrays of the same size.
+CODE:
+
+
+G, Remove duplicates from an array.
+CODE:
+
+let arrayOfDuplicateNumbers = [1, 2, 3, 4, 5, 6, 4, 5, 6, 6, 7, 8, 9, 10, 11, 3, 4, 5, 6];
+(arr => {
+    originalArray = [...new Set(arrayOfDuplicateNumbers)];
+    console.log(originalArray);
+})(arrayOfDuplicateNumbers);
+
+H, Rotate an array by k times.
+CODE:
