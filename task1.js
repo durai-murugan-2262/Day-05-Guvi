@@ -1,0 +1,77 @@
+1. Programs in IIFE & Anonymous function:
+
+A, Print odd numbers in an array.
+CODE:
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+(array => {
+  let oddNumbers = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 1) {
+      oddNumbers.push(array[i]);
+    }
+  }
+  console.log(oddNumbers);
+})(arr);
+
+B, Convert all the strings to title caps in a string array.
+CODE:
+
+
+
+C, Sum of all numbers in an array
+CODE:
+
+let numbers = [1, 2, 3, 4, 5, 6];
+(numbers => {
+    total = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        total += numbers[i];
+    }
+    console.log(total);
+})(numbers);
+
+D, Return all the prime numbers in an array
+CODE:
+
+let arrOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 24, 73, 83, 99, 101];
+(array => {
+    let primeArray = [];
+    for (let i= 0; i< array.length; i++) {
+        let result = 0
+        for (let j = 1; j <= array[i]; j++ ){
+            if (array[i]%j == 0) {
+                result += 1;
+            }
+        }
+        if (result <= 2) {
+            primeArray.push(array[i]);
+        }
+    }
+    console.log(primeArray)
+})(arrOfNumbers)
+
+E, Return all the palindromes in an array
+CODE:
+
+array = ["123", "343", "545", "325", "12621"];
+(array => {
+    let palindromes = [];
+    for (let i= 0; i< array.length; i++) {
+        let str = String(array[i]);
+        let a = 0;
+        let b = str.length - 1;
+        while(a < b) {
+            if (str[a] == str[b]) {
+                a++
+                b--
+            } else {
+                break;
+            }
+            if(a >= b) {
+                palindromes.push(array[i]);
+            }
+        }
+    }
+    console.log(palindromes)
+})(array);
