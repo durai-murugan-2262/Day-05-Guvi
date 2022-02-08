@@ -91,3 +91,14 @@ let arrayOfDuplicateNumbers = [1, 2, 3, 4, 5, 6, 4, 5, 6, 6, 7, 8, 9, 10, 11, 3,
 
 H, Rotate an array by k times.
 CODE:
+
+let array01 = [1, 2, 3, 4, 5, 6, 7];
+let k = 3;
+((array01) => {
+  let k = 3;
+  for (let i = 0; i < k; i++) {
+    array01.unshift(array01.pop());
+  }
+
+  console.log(array01);
+})(array01);
