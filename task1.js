@@ -1,6 +1,6 @@
 1. Programs in IIFE & Anonymous function:
 
-A, Print odd numbers in an array.
+ Print odd numbers in an array.
 CODE:
 
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
@@ -14,12 +14,8 @@ let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
   console.log(oddNumbers);
 })(arr);
 
-B, Convert all the strings to title caps in a string array.
-CODE:
 
-
-
-C, Sum of all numbers in an array
+ Sum of all numbers in an array
 CODE:
 
 let numbers = [1, 2, 3, 4, 5, 6];
@@ -31,7 +27,7 @@ let numbers = [1, 2, 3, 4, 5, 6];
     console.log(total);
 })(numbers);
 
-D, Return all the prime numbers in an array
+ Return all the prime numbers in an array
 CODE:
 
 let arrOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 24, 73, 83, 99, 101];
@@ -51,7 +47,7 @@ let arrOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 24, 73, 83, 99, 101];
     console.log(primeArray)
 })(arrOfNumbers)
 
-E, Return all the palindromes in an array
+ Return all the palindromes in an array
 CODE:
 
 array = ["123", "343", "545", "325", "12621"];
@@ -76,9 +72,6 @@ array = ["123", "343", "545", "325", "12621"];
     console.log(palindromes)
 })(array);
 
-F, Return median of two sorted arrays of the same size.
-CODE:
-
 
 G, Remove duplicates from an array.
 CODE:
@@ -89,7 +82,7 @@ let arrayOfDuplicateNumbers = [1, 2, 3, 4, 5, 6, 4, 5, 6, 6, 7, 8, 9, 10, 11, 3,
     console.log(originalArray);
 })(arrayOfDuplicateNumbers);
 
-H, Rotate an array by k times.
+ Rotate an array by k times.
 CODE:
 
 let array01 = [1, 2, 3, 4, 5, 6, 7];
